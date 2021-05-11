@@ -1,0 +1,7 @@
+<label>Total a retirar: {{data.totalMount}}</label>
+
+<ul>
+    <li *ngFor="let item of data.metas">
+        {{item.metaNombre}} : {{item.totalMount}}
+    </li>
+</ul>

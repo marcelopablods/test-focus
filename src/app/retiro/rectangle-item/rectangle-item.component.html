@@ -1,0 +1,67 @@
+<li class="list-group-item shadow-sm p-2">
+    <div>
+        <div class="d-flex">
+            <div class="flex-fill form-inline">
+            <!-- <div class="rectangle3"></div> -->
+            <h5 class="mb-0 mt-0 inline">
+                <span class="semi-bold">
+                    {{item.metaNombre}} - {{item.serie}}
+                </span>
+            </h5>
+            <!-- <label>{{item.metaNombre}} - {{item.serie}}</label> -->
+            
+            <!-- <ng-container *ngIf="!showInput; else input">
+                <label>Seleccione una opción:</label>
+                
+                <div class="rectangle4">
+                    
+                </div>
+            </ng-container>
+            <ng-template #input>
+                <input type="number" [formControl]="inputControl"/>
+            </ng-template> -->
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-6 border-right">
+                <p class="saldoActual text-left">Saldo Actual</p>
+                <p class="text-center monto">{{item.saldoDisponible | currency: "$":"symbol":"1.0-0"}}</p>
+            </div>
+            
+            <div class="col-6">
+                <ng-container *ngIf="!showInput; else input">
+                    <p class="saldoActual text-left">Seleccione una opción</p>
+                    <div class="btn-group btn-group-md mt-3" role="group" >
+                        <button 
+                            class="btn btn-outline-primary rounded-left" 
+                            (click)="retirarTodo(item.saldoDisponible)"
+                            [disabled]="item.saldoDisponible === 0"
+                            [class.active]="item.active"
+                        >
+                            Quiero retirar todo
+                        </button>
+                        <button 
+                            class="btn btn-outline-primary rounded-right"
+                            (click)="show(true)"
+                            [disabled]="item.saldoDisponible === 0"
+                        >
+                            Quiero ingresar el monto
+                        </button>
+                    </div>
+                </ng-container>
+                <ng-template #input>
+                    <div class="d-flex justify-content-between">
+                        <label class="saldoActual">Ingresa el monto a rescatar:</label>
+                        <button class="btn btn-link" (click)="show(false)">Volver</button>
+                    </div>
+                    <input type="number" step="1" min="0" class="form-control" [formControl]="inputControl"/>
+                    <div class="alert alert-sm alert-danger" *ngIf="inputControl.errors">
+                        El monto ingresado no puede superar al disponible.
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+        
+    </div>
+</li>

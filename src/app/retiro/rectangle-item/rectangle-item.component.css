@@ -1,0 +1,174 @@
+.rectangle1 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.titleCaja1 {
+    position: absolute;
+    left: 3.11%;
+    right: 65.78%;
+    top: 7.64%;
+    bottom: 77.71%;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+
+
+    color: #3D4758;
+}
+
+.rectangle3 {
+    position: absolute;
+    left: 0%;
+    right: 98.67%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #59CEC1;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+
+.saldoActual {
+    /* position: absolute;
+    left: 3.22%;
+    right: 87.56%;
+    top: 40.76%;
+    bottom: 47.77%; */
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /* line-height: 18px; */
+    /* identical to box height */
+
+
+    /* Gray */
+
+    color: #B0B1B5;
+}
+
+.monto {
+    /* left: 50%; */
+    /* right: 63.78%;
+    top: 54.78%;
+    bottom: 9.55%; */
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    /* line-height: 56px; */
+
+    color: #59CEC1;
+}
+
+/* .line4 {
+    position: absolute;
+    left: 49.89%;
+    right: 42.44%;
+    top: 45.22%;
+    bottom: 54.78%;
+    margin-top: 30px;
+    border: 2px solid #E6ECF5;
+    transform: rotate(90deg);
+} */
+
+.sel-option {
+    position: absolute;
+    left: 56.44%;
+    right: 27.56%;
+    top: 40.76%;
+    bottom: 47.77%;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    /* Gray */
+
+    color: #B0B1B5;
+}
+
+.rectangle2 {
+    position: absolute;
+    left: 56.44%;
+    right: 2.67%;
+    top: 61.78%;
+    bottom: 15.29%;
+
+    border: 1px solid #59CEC1;
+    box-sizing: border-box;
+    border-radius: 22px;
+}
+
+.rectangle4 {
+    position: absolute;
+    width: 259px;
+    height: 105px;
+    left: 70%;
+    top: 120%;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #59CEC1;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.quieroRetirarTodo {
+    position: absolute;
+    left: 60%;
+    right: 26.44%;
+    top: 66.88%;
+    bottom: 21.66%;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height */
+
+    letter-spacing: -0.01em;
+
+    color: #59CEC1;
+
+}
+
+.montoTotalARetirar {
+    /* position: absolute; */
+    /* width: 156px; */
+    /* height: 20px; */
+    /* left: 963px; */
+    /* top: 564px; */
+    margin-left: 50px;
+    margin-top: 100px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+
+    color: #59CEC1;
+
+}
